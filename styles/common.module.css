@@ -1,0 +1,31 @@
+.modal {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-30%, -50%);
+}
+
+.fh {
+  display: flex;
+  flex-direction: row;
+}
+
+.svgButton {
+  background: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.svgButton:hover {
+  transform: scale(1.1);
+}
+
+.container {
+  padding: 0 2rem;
+}
+
+.blurContainer {
+  filter: blur(3px);
+}

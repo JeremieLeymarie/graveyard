@@ -1,0 +1,25 @@
+.formError {
+  color: red;
+  font-size: inherit;
+  transition: all 0.2s ease;
+}
+
+.input {
+  width: 100%;
+  padding: 0.5rem 0.25rem;
+  font-size: 13px;
+  margin-bottom: 1rem;
+  margin-top: 0.25rem;
+  transition: all 0.2s ease;
+}
+
+.input:hover,
+.input:focus,
+.input:active {
+  /* border-color: #f3d34a; */
+  outline-color: #f3d34a;
+}
+
+.form {
+  color: #f3d34a;
+}
