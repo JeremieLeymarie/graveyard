@@ -1,0 +1,30 @@
+
+# ### Creates user
+# POST  http://127.0.0.1:5000/api/users/ HTTP/1.1
+# content-type: application/json
+
+# {
+#     "username" : "bob",
+#     "password":"bob",
+#     "firstname": "admin",
+#     "lastname":"admin",
+#     "email": "admin@admin.com",
+#     "role": "admin"
+# }
+
+### Get all users
+GET  http://127.0.0.1:5000/api/users/ HTTP/1.1  
+
+### Get user with id 1
+GET  http://127.0.0.1:5000/api/users/3 HTTP/1.1
+
+# ###  Update user 
+# PUT  http://127.0.0.1:5000/api/users/1 HTTP/1.1
+# content-type: application/json
+
+# {
+#     "username" : "bob_bidouille"
+# }
+
+### Delete
+DELETE  http://127.0.0.1:5000/api/users/1 HTTP/1.1

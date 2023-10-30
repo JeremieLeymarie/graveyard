@@ -1,27 +1,24 @@
 from abc import ABC, abstractmethod
+from typing import Collection
 
 class RepositoryInterface(ABC):
 
     @abstractmethod
-    def connect():
+    def create(self, collection: Collection, data: dict):
         pass
 
     @abstractmethod
-    def create(self, collection: str, data: dict):
+    def get(self,collection: Collection, id: str, filter: dict):
         pass
 
     @abstractmethod
-    def get(self,collection: str, id: str, filter: dict):
-        pass
-
-    @abstractmethod
-    def get_all(self, collection: str,):
+    def get_all(self, collection: Collection,):
         pass
     
     @abstractmethod
-    def update(self, collection: str, id: str, data: dict):
+    def update(self, collection: Collection, id: str, data: dict):
         pass
 
     @abstractmethod
-    def delete(self, collection: str, id: str, filter: dict):
+    def delete(self, collection: Collection, id: str, filter: dict):
         pass
